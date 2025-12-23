@@ -201,13 +201,13 @@ nav ul li a {
 }
 
 .about-content {
-  max-width: 900px;
+  max-width: 1000px;
   width: 100%;
 }
 
 .about-content h1 {
   font-size: 2.8rem;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   border-bottom: 2px solid white;
   display: inline-block;
   padding-bottom: 10px;
@@ -248,7 +248,7 @@ nav ul li a {
 }
 
 .projects-container {
-  max-width: 900px;
+  max-width: 1000px;
   width: 100%;
 }
 
@@ -372,6 +372,120 @@ nav ul li a {
   transform: scale(1.03);
 }
 
+
+/*SERVICIOS*/
+
+.services-page {
+  padding: 18px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.services-container {
+  max-width: 1000px;
+  width: 100%;
+}
+
+.services-container h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid white;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.services-intro {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  line-height: 1.8;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.service-card {
+  background: rgba(255,255,255,0.08);
+  border: 2px solid rgba(255,255,255,0.15);
+  border-radius: 14px;
+  padding: 22px 18px;
+  text-align: center;
+  backdrop-filter: blur(6px);
+  transition: transform .25s ease, background .25s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255,255,255,0.15);
+}
+
+.service-card i {
+  font-size: 1.5rem;
+
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto 14px;
+
+  background: rgba(255,255,255,0.12);
+  border-radius: 50%;
+}
+
+
+.service-card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+
+.service-desc {
+  font-size: 0.95rem;
+  font-weight: lighter;
+  opacity: 0.85;
+  margin-bottom: 14px;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+/* CTA */
+.services-cta {
+  margin-top: 45px;
+  text-align: center;
+}
+
+
+.services-subtitle {
+  margin: 15px 0 25px;
+  font-size: 1.6rem;
+  border-bottom: 2px solid rgba(255,255,255,0.3);
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+.services-main {
+  margin-bottom: 10px;
+}
+
+.services-creative {
+  max-width: 700px;
+}
+
+.services-cta {
+  margin-top: 50px;
+  text-align: center;
+}
+
+
 /*CONTACTO*/
 
 .contact-page {
@@ -383,13 +497,13 @@ nav ul li a {
 }
 
 .contact-container {
-  max-width: 900px;
+  max-width: 1000px;
   width: 100%;
 }
 
 .contact-container h1 {
   font-size: 2.8rem;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   border-bottom: 2px solid white;
   display: inline-block;
   padding-bottom: 10px;
@@ -585,5 +699,13 @@ nav ul li a {
 
   .project-item .overlay .project-type {
     font-size: 0.9rem;
+  }
+
+  .services-container h1 {
+    font-size: 2rem;
+  }
+
+  .services-intro {
+    font-size: 1rem;
   }
 }
