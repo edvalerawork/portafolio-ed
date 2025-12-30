@@ -221,7 +221,7 @@ nav ul li a {
   text-align: justify;
 }
 
-/* CV BUTTON */
+/* CV BOTÓN */
 .btn-cv {
   display: inline-block;
   background-color: white;
@@ -582,10 +582,14 @@ nav ul li a {
 
 @media (max-width: 768px) {
   .hero h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 20px;
   }
 
+  .hero p {
+  font-size: 1.1rem;
+  }
+  
   .highlight1,
   .highlight2 {
     padding: 1px 8px;
@@ -635,6 +639,10 @@ nav ul li a {
     pointer-events: none;
     transition: opacity 0.5s ease;
     z-index: 1000;
+  }
+  .nav-links a {
+    font-size: 2rem;
+    text-decoration: none;
   }
 
   .nav-links.active {
