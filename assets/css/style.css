@@ -212,13 +212,59 @@ nav ul li a {
   display: inline-block;
   padding-bottom: 10px;
 }
-
+.about-body {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 60px;
+  margin-top: 10px;
+  align-items: center;
+}
+.about-content h2 {
+  font-size: 1.3rem;
+  line-height: 1.2;
+  text-align: justify;
+  font-weight: 200;
+}
 .about-content p {
   font-size: 1.2rem;
   font-weight: lighter;
-  line-height: 1.8;
-  margin-bottom: 20px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  margin-top: 15px;
   text-align: justify;
+}
+strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+.about-images {
+  position: relative;
+  width: 100%;
+  height: 420px;
+}
+
+.about-images img {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 14px;
+  object-fit: cover;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+  border-radius: 15px;
+  border: 6px solid rgba(255,255,255,0.25);
+  transition: transform 0.35s ease, border-color 0.3s ease;
+}
+
+/* imagen 1 */
+.about-images img:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+
+/* imagen 2 */
+.about-images img:nth-child(2) {
+  top: 210px;
+  left: 80px;
 }
 
 /* CV BOTÓN */
@@ -226,12 +272,13 @@ nav ul li a {
   display: inline-block;
   background-color: white;
   color: #002f3d;
-  padding: 12px 20px;
-  font-size: 1rem;
+  padding: 15px 20px;
+  font-size: 1.3rem;
   font-weight: bold;
-  border-radius: 30px;
+  border-radius: 20px;
   text-decoration: none;
   transition: background-color 0.3s, color 0.3s;
+  margin-top: 10px;
 }
 
 .btn-cv:hover {
@@ -397,7 +444,7 @@ nav ul li a {
 .services-intro {
   font-size: 1.2rem;
   font-weight: lighter;
-  line-height: 1.8;
+  line-height: 1.6;
   margin-bottom: 10px;
   text-align: justify;
 }
@@ -512,7 +559,7 @@ nav ul li a {
 .contact-container p {
   font-size: 1.2rem;
   font-weight: lighter;
-  line-height: 1.8;
+  line-height: 1.6;
   margin-bottom: 30px;
   text-align: justify;
 }
@@ -566,6 +613,23 @@ nav ul li a {
 
 
 /*RESPONSIVE*/
+@media (max-width: 900px) {
+  .about-body {
+    grid-template-columns: 1fr;
+  }
+
+  .about-images {
+    height: auto;
+    margin-top: 40px;
+  }
+
+  .about-images img {
+    position: static;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
 @media (min-width: 769px) {
   #menu {
     background: rgba(255,255,255,0.08);
@@ -679,7 +743,10 @@ nav ul li a {
     font-size: 2rem;
     margin-bottom: 25px;
   }
-
+  .about-content h2 {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+  }
   .about-content p {
     font-size: 1rem;
     line-height: 1.6;
